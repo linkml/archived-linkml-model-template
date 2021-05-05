@@ -1,2 +1,99 @@
-# linkml-model-template
-Enhanced template for building and publishing LinkML based models
+# Template for LinkML schema models
+
+## What is this?
+
+This is a GitHub template for a [LinkML](https://github.com/biolink/biolinkml/) project.
+
+It allows you to create a project for your schema as quickly as
+possible. It takes care of generating a beautiful readthedocs themed
+site, as well as downstream artefacts, including:
+
+ * JSON-Schema
+ * ShEx
+ * OWL
+ * RDF (direct mapping)
+ * JSON-LD Contexts
+ * SQL DDL (TODO)
+ * TSV/CSV reports
+
+## Quickstart
+
+ 1. Click the big green "Use this template" button on this page
+ 2. Name your repo according to your schema, e.g. my-awsome-project-model, and clone it
+ 3. Rename the schema file in [model/schema](model/schema). Keep the `.yaml` suffix
+ 4. Modify the schema, add your own classes and slots.
+ 5. Edit `config/CONFIG.yaml` to set your specific parameters. The details on the parameters can be found in
+    the [https://linkml.github.io/linkml-template-config-model]() directory.
+ 6. Run `config.sh` from the root directory, correcting any errors.  This builds all of the individual model
+    components, including the makefile, the github actions, the PyPi setup.cfg, etc.
+ 7. Type `make` to build your downstream artefacts (jsonschema, owl, etc)
+ 8. Once satisfied, commit your new project to github, which will rerun the make process.
+ 9. To install the package in pypi...
+
+
+## How it works
+
+This repo is a GitHub "template" repo. When you "Use this template" it will make a copy for your project.
+
+Everything is orchestrated by a generic single [Makefile](Makefile). For this to work you should follow certain conventions:
+
+ * Keep your schema in src/schema
+ * Use the `.yaml` suffix for all schema files
+ * Use the suggested directory layout here.
+
+To run the Makefile you will need Python (>=3.7), and biolinkml. You can type:
+
+```bash
+make install
+```
+
+or equivalently
+
+```bash
+. environment.sh
+pip install -r requirements.txt
+```
+
+You can make specific targets, e.g
+
+```bash
+make stage-jsonschema
+```
+
+Use the `all` target to make everything
+
+Note to redeploy documentation all you need to do is:
+
+```bash
+make gh-deploy
+```
+
+That's it!
+
+The Makefile takes care of dependencies. Downstream files are only rebuilt if source files change.
+
+## Documentation framework
+
+You can change the theme by editing [mkdocs.yml](mkdocs.yml)
+
+Do not edit docs in place. They are placed in the `docs` dir by `make stage-docs`.
+
+You can add your own docs to `src/docs/
+
+Note that docs are actually deployed on the gh-pages branch, but you don't need to worry about this. Just type:
+
+```bash
+make gh-deploy
+```
+
+The template site is deployed on
+
+http://cmungall.github.io/linkml-template
+
+But this is not very interesting as it is a toy schema
+
+## TODO
+
+ - [ ] GitHub actions
+ - [ ] Making separate modules for each import
+
