@@ -103,3 +103,5 @@ enums:
         description: Emit RDF representation of model schema
       shex:
         description: Emit ShEx representation of model schema
+      sqlddl:
+        description: Emit SQL Data Definition Language (create table statements) 
