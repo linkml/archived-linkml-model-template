@@ -1,3 +1,6 @@
+# NOTE: We are still getting this put together -- hold off on using it until we take this message down... thanks!
+
+
 # Template for LinkML schema models
 
 ## What is this?
