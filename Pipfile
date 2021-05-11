@@ -1,0 +1,13 @@
+CONFIG.yaml docs        schema
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+template-configurator = ">=0.1.3"
+
+[dev-packages]
+
+[pipenv]
+allow_prereleases = true

@@ -30,8 +30,8 @@ site, as well as downstream artefacts, including:
     the [LinkML Template Configuration Model](https://linkml.github.io/template-config-model/) directory.  
     (_Note that the Template Configuration Model was built using this very template._)
  6. Run the [template-configurator](https://linkml.github.io/template-configurator/) program:
-    1) `pip(env) install template-configurator`
-    2) `pip(env run) configure`
+    1) `pip(env) install `
+    2) `(pipenv run) configure model/CONFIG.yaml`
     
     This will generate a number of files that can be used to make, test, and distribute your final model.  Note
     that the template-configurator only needs to be run once as a rule.  You can, however, re-generate all of
