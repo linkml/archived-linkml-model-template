@@ -1,0 +1,15 @@
+# Make file to configure clone of linkml-model-template
+VENV = . venv/bin/activate
+
+all: update
+
+update: venv
+    $(VENV) && configure model/CONF.yaml
+
+reset: venv
+    $(VENV) configure model/conf.yaml --reset
+
+venv:
+    virtualenv venv
+    $(VENV) && pip install template-configurator
+
