@@ -1,6 +1,6 @@
 # Make artifacts
-config/.venv
-config/env.lock
+make-venv/.venv
+make-venv/env.lock
 target/
 
 # Byte-compiled / optimized / DLL files
