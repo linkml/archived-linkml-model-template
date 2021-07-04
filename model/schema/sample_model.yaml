@@ -14,10 +14,10 @@ default_curi_maps:
  - semweb_context
 
 imports:
- - types
+ - linkml:types
 
 classes:
- Person:
+  Person:
    description: Minimal information about a person
    class_uri: sdo:Person
    attributes:
