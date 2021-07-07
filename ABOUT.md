@@ -1,8 +1,8 @@
-#<span style="color:red">Still under development -- not yet ready for prime time</span>
+# <span style="color:red">Still under development -- not yet ready for prime time</span>
 
 
 
-# Template for LinkML based schema's
+# Template for LinkML based schemas
 
 ## Requirements
 * __Python >= 3.7.1__
