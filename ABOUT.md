@@ -40,7 +40,7 @@ the [LinkML Template Configuration Model](https://linkml.github.io/template-conf
     * `make -f MakeConfig reset`
     
     This will generate a number of files that can be used to make, test, and distribute your final model.  Note
-    that the template-configurator only needs to be run once as a rule.  You can, however, re-generate allof
+    that the template-configurator only needs to be run once as a rule.  You can, however, re-generate all of
     the target artifacts with `make -f MakeConfig reset`.  You can also selectively remove artifacts and get them
     regenerated with `make -f MakeConfig update`
  5. Rename the schema file in [model/schema](model/schema) to match the `root_schema` named in the CONFIG.yaml file.  
