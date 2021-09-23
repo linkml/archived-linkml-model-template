@@ -1,11 +1,12 @@
-# Setting up a new PyPi repository
-This document contains some notes on how to set up a new linkml derived model in [PyPi](https://pypi.org/)
+# Setting up a new PyPI repository
+
+This document contains some notes on how to set up a new linkml derived model in the [Python Package Index (PyPI)](https://pypi.org/)
 
 For the purposes of this example, we will pretend that you have created a new LinkML model,  `my-cool-model` in your
 repository.
 
 ## Prerequisites
-1) A PyPi login
+1) A PyPI login
 2) `my-cool-model` builds and passes all unit tests  
 
 ## Process
@@ -20,7 +21,7 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 >
 ```
-2) Create the initial PyPi distro
+2) Create the initial PyPI distro
 ```bash
 > git tag v0.0.1
 > rm -f dist/*
@@ -41,7 +42,7 @@ my-cool-model-1.0.1-py3-none-any.whl my-cool-model-1.0.1.tar.gz
 If the tags above show up with a `dev1` suffix on them, something has changed since the tag.  If this occurs, you can
 go ahead and find what got missed in the commit, fix and commit it and grab the next tag (v0.0.2 in this example) and
 redo the setup.
-3) Upload the commit to pypi:
+3) Upload the commit to PyPI:
 ```bash
 > twine upload dist/*
 Uploading distributions to https://upload.pypi.org/legacy/
@@ -60,12 +61,12 @@ https://pypi.org/project/my-cool-model/0.0.1/
 > git push --tags
 ```
 
-5) Create an OAUTH2 token from the PyPi site
+5) Create an OAUTH2 token from the PyPI site
    
 Note: the examples below show this process using a real project, `jsonasobj2`.  You will be using `my-cool-model` in its 
 stead:
 
-__log in to pypi__
+__log in to PyPI__
     
 ![img.png](images/img.png)
 
@@ -117,7 +118,7 @@ __Select _Publish release___
 __The _Actions_ tab will show you the status of your publish__
 ![img_17.png](images/img_17.png)
 
-__When the action rolls over to <span style="color:green">green</span>, your newest version will be in PyPi__
+__When the action rolls over to <span style="color:green">green</span>, your newest version will be in PyPI__
 ![img_18.png](images/img_18.png)
 
 __And the new release will be available for download and use__
