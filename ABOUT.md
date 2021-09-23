@@ -49,7 +49,7 @@ the [LinkML Template Configuration Model](https://linkml.github.io/template-conf
  6. Edit the root_schema to add your own types, classes and slots.
  7. Type `make` to build your downstream artefacts (jsonschema, owl, etc)
  8. Once satisfied, commit your new project to github, which will rerun the make process.
- 9. The package can also be installed in the `Python Package Index (PyPI)` - this is an advanced topic, see [PYPI_SETUP]() for details
+ 9. The package can also be uploaded to the `Python Package Index (PyPI)` for installation with `pip` - this is an advanced topic, see [PYPI_SETUP]() for details
 10. This file (ABOUT.md) and the `images` directory can be removed once you are satisfied
 
 
