@@ -10,7 +10,7 @@
 * __pip__ - comes with most python distros - you should be ok
 * __virtualenv__ - can be added via `pip install virtualenv`
 * __pipenv__ - can be added via `pip install pipenv`
-* 
+*
 
 ## What is this?
 
@@ -34,11 +34,11 @@ site, as well as downstream artefacts, including:
  1. Click the big green <span style="color:green">"Use this template"</span> button on this page
  2. Name your repo according to your schema, e.g. my-awsome-project-model, and clone it
  3. Edit `model/CONFIG.yaml` to set your specific parameters. The details on the parameters can be found in
-the [LinkML Template Configuration Model](https://linkml.github.io/template-config-model/) directory. 
+the [LinkML Template Configuration Model](https://linkml.github.io/template-config-model/) directory.
     (_Note that the Template Configuration Model was built using this very template._)
  4. Configure the repository:
     * `make -f MakeConfig reset`
-    
+
     This will generate a number of files that can be used to make, test, and distribute your final model.  Note
     that the template-configurator only needs to be run once as a rule.  You can, however, re-generate all of
     the target artifacts with `make -f MakeConfig reset`.  You can also selectively remove artifacts and get them
@@ -49,7 +49,7 @@ the [LinkML Template Configuration Model](https://linkml.github.io/template-conf
  6. Edit the root_schema to add your own types, classes and slots.
  7. Type `make` to build your downstream artefacts (jsonschema, owl, etc)
  8. Once satisfied, commit your new project to github, which will rerun the make process.
- 9. The package can also be installed in `pypi` - this is an advanced topic, see [PYPI_SETUP]() for details
+ 9. The package can also be installed in the `Python Package Index (PyPI)` - this is an advanced topic, see [PYPI_SETUP]() for details
 10. This file (ABOUT.md) and the `images` directory can be removed once you are satisfied
 
 
