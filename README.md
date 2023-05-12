@@ -1,3 +1,3 @@
-# Placeholder README
-This file will be replaced in the build process.  The details about how to use this template
-can be found in [ABOUT.md](./ABOUT.md).
+
+## THIS REPOSITORY IS ARCHIVED.  
+## Please use https://github.com/linkml/linkml-project-cookiecutter instead.  
